@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen2">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/transparent"
+       android:orientation="horizontal">
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:id="@+id/tab1"
+           android:text="Tab1"
+           app:cornerRadius="0dp" />
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Tab2"
+           android:id="@+id/tab2"
+           app:cornerRadius="0dp" />
+   </LinearLayout>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frag1"
+        tools:layout="@layout/fragment_frag_1"
+        android:name="com.example.assignment_01.frag_1"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frag2"
+        tools:layout="@layout/fragment_frag_2"
+        android:name="com.example.assignment_01.frag_2"/>
+</LinearLayout>
